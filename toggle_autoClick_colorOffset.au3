@@ -32,13 +32,6 @@ Func getColor()
 	Return PixelGetColor($aPos[0]-$offset, $aPos[1]-$offset)
 EndFunc   ;==>getColor
 
-Func setColor()
-	Local $aPos = MouseGetPos()
-	$color = PixelGetColor($aPos[0]-$offset, $aPos[1]-$offset)
-	Return PixelGetColor($aPos[0]-$offset, $aPos[1]-$offset)
-EndFunc   ;==>setColor
-
-
 While 1
 	If (Not $pause) Then
 		If (getColor() == $color) Then
